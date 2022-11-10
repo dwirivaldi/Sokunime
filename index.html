@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <!-- Bootstarp -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Work+Sans:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External Style CSS -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+    <style></style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div
+        class="container-fluid"
+        style="background-color: #192026; margin-top: -8px"
+      >
+        <a class="navbar-brand" href="index.html">Sokunime</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="margin-right: 83px; margin-top: 24px"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin: auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html"
+                style="color: #868686"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="color: #868686"
+                >Anime</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="color: #868686"
+                >Movie</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="color: #868686"
+                >Ongoing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="color: #868686"
+                >Release Schedule</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="color: #868686"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input
+                class="form-control search-input"
+                type="search"
+                placeholder="Search anime or movie"
+                aria-label="Search"
+              />
+              <span class="input-group-text search-btn" id="basic-addon2"
+                ><i class="bi bi-search"></i
+              ></span>
+            </div>
+          </form>
+          <button
+            type="button"
+            class="btn btn-outline-light"
+            style="border: none; margin-left: 10px"
+            data-bs-toggle="modal"
+            data-bs-target="#loginmodal"
+          >
+            <i class="bi bi-person-circle"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Alert -->
+    <div
+      class="container-fluid"
+      style="width: fit-content; margin-right: 185px"
+    >
+      <div class="alert alert-warning" role="alert">
+        WARNING!!! This is adult content 17+.
+      </div>
+    </div>
+
+    <!-- Breadcrumbs
+    <nav aria-label="breadcrumb" style="margin-left: 200px">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+      </ol>
+    </nav> -->
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide carousel"
+      data-bs-ride="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner" style="height: 400px">
+        <div class="carousel-item active">
+          <img
+            src="https://wallpaper.dog/large/17169622.png"
+            class="d-block w-100"
+            alt="One Piece"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.teahub.io/photos/full/38-385017_fairy-tail-youtube-banner.jpg"
+            class="d-block w-100"
+            alt="Fairy Tail"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.kaorinusantara.or.id/wp-content/uploads/2020/02/The-Seven-Deadly-Sins-Grand-Cross-Game-Adventure-RPG-Sinematik-Netmarble-Rilis-Pada-3-Maret-2020-scaled.jpg"
+            class="d-block w-100"
+            alt="Nanatsu no taizai"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Cards -->
+    <div
+      class="row"
+      style="margin: 10vw; margin-top: 10px; margin-bottom: 35px"
+    >
+      <h2>Popular Anime</h2>
+      <div class="col-lg-2 col-sm-3">
+        <div class="card">
+          <img
+            src="https://sokuja.com/wp-content/uploads/2022/08/Chainsaw-Man-sub-indo-sokuja.jpg"
+            class="card-img-top"
+            alt="Chainsaw Man"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Chainsaw Man</h6>
+            <a
+              href="https://www.youtube.com/watch?v=v4yLeNt-kCU&ab_channel=MAPPACHANNEL"
+              class="btn btn-danger"
+              >Watch Trailer</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3">
+        <div class="card">
+          <img
+            src="https://sokuja.com/wp-content/uploads/2022/08/overlord-season-4-sub-indo.jpg"
+            class="card-img-top"
+            alt="Overlord Season 4"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Overlord Season 4</h6>
+            <a
+              href="https://www.youtube.com/watch?v=ZOEihZPz3aE&ab_channel=AniTV"
+              class="btn btn-danger"
+              >Watch Trailer</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3">
+        <div class="card">
+          <img
+            src="https://sokuja.com/wp-content/uploads/2022/10/sokuja-black-clover.jpg"
+            class="card-img-top"
+            alt="Black Clover"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Black Clover</h6>
+            <a
+              href="https://www.youtube.com/watch?v=7FEyjd2hNSk&ab_channel=NetflixAnime"
+              class="btn btn-danger"
+              >Watch Trailer</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3">
+        <div class="card">
+          <img
+            src="https://sokuja.com/wp-content/uploads/2022/10/bleach-sennen-kessen-hen.jpeg"
+            class="card-img-top"
+            alt="Bleach"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Bleach</h6>
+            <a
+              href="https://www.youtube.com/watch?v=v4yLeNt-kCU&ab_channel=MAPPACHANNEL"
+              class="btn btn-danger"
+              >Watch Trailer</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3">
+        <div class="card">
+          <img
+            src="https://cdn.myanimelist.net/images/anime/1628/119353.jpg"
+            class="card-img-top"
+            alt=">Hanma Baki : Son of Ogre"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Hanma Baki : Son of Ogre</h6>
+            <a
+              href="https://www.youtube.com/watch?v=4-YNrsiWikM&ab_channel=NetflixAnime"
+              class="btn btn-danger"
+              >Watch Trailer</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3">
+        <div class="card">
+          <img
+            src="https://sokuja.com/wp-content/uploads/2022/08/1661600350-1974-109222.jpg"
+            class="card-img-top"
+            alt="Jujutsu Kaisen"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Jujutsu Kaisen</h6>
+            <a
+              href="https://www.youtube.com/watch?v=UPRqnFnnrr8&ab_channel=RottenTomatoesTrailers"
+              class="btn btn-danger"
+              >Watch Trailer</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="row"
+      style="margin: 10vw; margin-top: 10px; margin-bottom: 20px"
+    >
+      <h2>Popular Movie</h2>
+      <div class="col-lg-2 col-sm-3">
+        <div class="card">
+          <img
+            src="https://cdn.cgv.id/uploads/movie/compressed/22017000.jpg"
+            class="card-img-top"
+            alt="One Piece Film Red"
+          />
+          <div class="card-body">
+            <h6 class="card-title">One Piece Film Red</h6>
+            <a
+              href="https://www.youtube.com/watch?v=89JWRYEIG-s&ab_channel=CrunchyrollCollection"
+              class="btn btn-danger"
+              >Watch Trailer</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3">
+        <div class="card">
+          <img
+            src="https://cdn.cgv.id/uploads/movie/compressed/22010700.jpg"
+            class="card-img-top"
+            alt="Detective Conan"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Detective Conan</h6>
+            <a
+              href="https://www.youtube.com/watch?v=7vaMLUBcyYc&ab_channel=Cin%C3%A9polisIndonesia"
+              class="btn btn-danger"
+              >Watch Trailer</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3">
+        <div class="card">
+          <img
+            src="https://cdn.cgv.id/uploads/movie/compressed/22015600.jpg"
+            class="card-img-top"
+            alt="Dragon Ball Super"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Dragon Ball Super</h6>
+            <a
+              href="https://www.youtube.com/watch?v=W9JHZwtObqs&ab_channel=CrunchyrollDubs"
+              class="btn btn-danger"
+              >Watch Trailer</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3">
+        <div class="card">
+          <img
+            src="https://cdn.cgv.id/uploads/movie/compressed/22015400.jpg"
+            class="card-img-top"
+            alt="Doraemon"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Doraemon</h6>
+            <a
+              href="https://www.youtube.com/watch?v=qRuAcGzxRh4&ab_channel=NuMetro"
+              class="btn btn-danger"
+              >Watch Trailer</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbq1Qc0uRvpW1rx3RRTzMKJCnIrHmnPFav0IUf8L6VWV9RaDHV"
+            class="card-img-top"
+            alt="Bubble"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Bubble</h6>
+            <a
+              href="https://www.youtube.com/watch?v=8pbWblLkHHk&ab_channel=Netflix"
+              class="btn btn-danger"
+              >Watch Trailer</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTes1wVZWc9bm6nuUCq5rxPiSUg7F3nO0bE8LNB2L5q5NkUnN1r"
+            class="card-img-top"
+            alt="Drifting Home"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Drifting Home</h6>
+            <a
+              href="https://www.youtube.com/watch?v=BSE2KGU5png&ab_channel=Netflix"
+              class="btn btn-danger"
+              >Watch Trailer</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="loginmodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content" style="background: none; border: none">
+          <div class="modal-body">
+            <!-- Sign In Area -->
+            <div class="signin-container">
+              <div style="display: flex; justify-content: space-between">
+                <div class="signin-title">Sign in</div>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  style="position: relative; bottom: 35px; left: 15px"
+                ></button>
+              </div>
+              <div class="mb-24">
+                <input
+                  class="input-email"
+                  type="text"
+                  placeholder="Enter phone number or email address"
+                />
+              </div>
+              <div
+                class="form-check form-switch mb-24"
+                style="display: flex; justify-content: center"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label
+                  class="form-check-label"
+                  for="flexSwitchCheckDefault"
+                  style="padding-left: 10px"
+                  >Keep me Signed in</label
+                >
+              </div>
+              <button type="button" class="btn btn-secondary signin-btn mb-24">
+                Sign in
+              </button>
+              <button type="button" class="btn btn-light signup-btn mb-24">
+                Sign up
+              </button>
+              <div class="mb-24" style="text-align: center">or</div>
+              <button type="button" class="btn btn-light sosmed-btn mb-12">
+                <i class="bi bi-google"></i>
+                Continue with Google
+              </button>
+              <button type="button" class="btn btn-light sosmed-btn mb-12">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#1976D2"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  />
+                </svg>
+                Continue with Facebook
+              </button>
+              <button type="button" class="btn btn-light sosmed-btn mb-12">
+                <i class="bi bi-apple"></i>
+                Continue with Apple
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p style="color: white; text-align: center">
+      Copyright © 2022 SOKUNIME. All Rights Reserved
+    </p>
+  </footer>
+</html>

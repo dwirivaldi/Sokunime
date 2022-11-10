@@ -1,0 +1,136 @@
+body {
+        background: #192026;
+        font-family: "Poppins", sans-serif;
+      }
+
+      h2 {
+        color: white;
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 32px;
+        letter-spacing: 0.07em;  
+        color: #ffffff;
+        margin-left: 83px;
+        margin-top: 24px;
+      }
+
+      .navbar-nav {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.07em;
+      }
+
+      .d-flex {
+        width: 22vw;
+      }
+
+      @media screen and (max-width: 992px) {
+        .d-flex {
+          width: 95vw;
+        }
+      }
+
+      .search-input {
+        background-color: #374151;
+        color: #868686;
+        border-color: #374151;
+        border-right: none;
+        border-top-left-radius: 37px;
+        border-bottom-left-radius: 37px;
+      }
+
+      .search-btn {
+        background-color: #374151;
+        color: #868686;
+        border-color: #374151;
+        border-left: none;
+        border-top-right-radius: 37px;
+        border-bottom-right-radius: 37px;
+      }
+
+      .carousel {
+        /* width: 1170px; */
+        margin: 10.5vw;
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+
+      .card {
+        border: none;
+        background-color: transparent;
+        color: whitesmoke;
+      }
+
+      .card-body {
+        display: contents;
+      }
+
+      .card-title {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .signin-container {
+        padding: 48px 24px;
+        width: 400px;
+        background: #DFDFDE;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+
+      .signin-title {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 29px;
+        color: #000032;
+
+        margin-bottom: 41px;
+      }
+
+      .input-email {
+        padding: 13px 20px;
+        width: 352px;
+        height: 45px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #b3b3b3;
+      }
+
+      .mb-12 {
+        margin-bottom: 12px;
+      }
+
+      .mb-24 {
+        margin-bottom: 24px;
+      }
+
+      .signin-btn {
+        padding: 16px 24px;
+        width: 352px;
+        height: 54px;
+        border-radius: 8px;
+      }
+
+      .signup-btn {
+        width: 352px;
+        height: 35px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color:  #374151;
+      }
+
+      .sosmed-btn {
+        padding: 0px 12px;
+        width: 352px;
+        height: 40px;
+        background: #f2f2f2;
+        border-radius: 4px;
+      }
