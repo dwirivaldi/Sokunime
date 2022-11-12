@@ -134,3 +134,16 @@ body {
         background: #f2f2f2;
         border-radius: 4px;
       }
+
+      .badan {
+        color: white;
+        margin-top: 175px;
+      }
+ 
+      .peding-100 {
+        padding: 120px;
+      }
+ 
+      .peding-30 {
+        padding: 30px;
+      }
